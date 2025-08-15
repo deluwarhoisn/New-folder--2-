@@ -31,5 +31,5 @@ for(const product of products){
 }
 return matched;
 }
-const result = matcedProducts(products,'phone');
+const result = matcedProducts(products,'laptop');
 console.log(result)
