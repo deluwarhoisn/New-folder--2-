@@ -1,2 +1,2 @@
-console.log('helo from outside')
-console.log(document)
+// console.log('helo from outside')
+// console.log(document)
