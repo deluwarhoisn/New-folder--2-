@@ -42,6 +42,15 @@
             
         </ul>
        </section>
+       <section id="players-continers">
+        <h1>players</h1>
+        <ul>
+            <li>Messi</li>
+            <li>Pele</li>
+            <li>Ronlando</li>
+            <li>Embape</li>
+        </ul>
+       </section>
     </main>
     <script>
         // console.log('Helo from this is javascript')
@@ -51,35 +60,36 @@
             name:'abul mia',
             id:121,
             study:function (subject){
-                console.log('studing subject:',subject);
+                // console.log('studing subject:',subject);
 
             }
         }
         // document.getElementsByTagName
         const liCollection = document.getElementsByTagName('li')
-        console.log(liCollection)
+        // console.log(liCollection)
         for(const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
         // all h1 tag
         const allHeadings = document.getElementsByTagName('h1');
         for(const heading of allHeadings){
-            console.log(heading.innerText)
+            // console.log(heading.innerText)
         }
         const FoodTitleH1 = document.getElementById('food-taitel');
-        console.log(FoodTitleH1.innerText);
-        FoodTitleH1.innerText = 'Food i loved to eit'
+        // console.log(FoodTitleH1.innerText);
+        // FoodTitleH1.innerText = 'Food i loved to eit'
 
         const bandElement = document.getElementById('bade');
         bandElement.innerText = 'jalali sliping bankd'
 
         // get elements by calss name 
         const foreignElements = document.getElementsByClassName('foreign');
-        console.log(foreignElements);
+        // console.log(foreignElements);
         for(const element of foreignElements){
-            console.log(element);
+            // console.log(element);
         }
     </script>
     <script src="js/helo.js"></script>
+    <script src="./js/cssinjs.js"></script>
 </body>
 </html>
