@@ -8,6 +8,9 @@
         h1{
             color: gold;
         }
+        #foot-taitel{
+            color: brown;
+        }
     </style>
     <link rel="stylesheet" href="./style/stels.css">
 </head>
@@ -16,7 +19,8 @@
         <h1>This is my headar no banner</h1>
     </header>
     <main>
-        <h1>wlcome to my dom</h1>
+       <section>
+         <h1>wlcome to my dom</h1>
         <ul>
             <li>sayate</li>
             <li>bonobash</li>
@@ -24,6 +28,20 @@
             <li>bonobash</li>
             <li>jalai</li>
         </ul>
+       </section>
+       <section>
+        <h1 id="foot-taitel">Food i love</h1>
+        <ul>
+            <li>Rice</li>
+            <li id="bade">Potato</li>
+            <li>Fish</li>
+            <li>Lentas</li>
+            <li class="foreign">Burgar</li>
+            <li class="foreign">Pizza</li>
+            <li class="foreign">Pasta</li>
+            
+        </ul>
+       </section>
     </main>
     <script>
         // console.log('Helo from this is javascript')
@@ -47,6 +65,19 @@
         const allHeadings = document.getElementsByTagName('h1');
         for(const heading of allHeadings){
             console.log(heading.innerText)
+        }
+        const FoodTitleH1 = document.getElementById('food-taitel');
+        console.log(FoodTitleH1.innerText);
+        FoodTitleH1.innerText = 'Food i loved to eit'
+
+        const bandElement = document.getElementById('bade');
+        bandElement.innerText = 'jalali sliping bankd'
+
+        // get elements by calss name 
+        const foreignElements = document.getElementsByClassName('foreign');
+        console.log(foreignElements);
+        for(const element of foreignElements){
+            console.log(element);
         }
     </script>
     <script src="js/helo.js"></script>
